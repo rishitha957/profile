@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+  <title>{{ site.name }}</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.0%;width:60%;vertical-align:middle">
+              <h1>
+                Rishitha Kalicheti
+              </h1>
+              <p>
+                I am a master's in Computer Science student at <a href="https://www.jhu.edu/">The Johns Hopkins University</a>, Whiting School of Engineering, where I am currently enrolled in courses such as <a href="https://www.langmead-lab.org/">Computational Genomics</a>, <a href="http://mt-class.org/jhu/"> Machine Translation </a> and <a href="http://www.cs475.org/fall2020/syllabus/"> Machine Learning </a>. 
+              </p>
+              <p>
+                From 2021 to 2023, I worked as a Software Developer at <a href="https://www.ubs.com/us/en.html">UBS</a>. I was part of CEDA (Core Engineering Data and Analytics) team, where I developed and optimized our Data Reporting and Governance Platform. Additionally, exposure to complex financial systems helped me design robust systems that handle large-scale data. I was also exposed to <a href="https://azure.microsoft.com/en-us/products/#devops"> Azure </a>cloud to design and deploy our solutions. I am certified as an <a href="https://www.credly.com/badges/48866729-646c-4e33-bb9f-39ce15562dbc/public_url">Azure Fundamentals (AZ-900) </a> professional.
+              </p>
+              <p>
+                I have a Bachelor's (BTech) degree in Computer Science from <a href="https://www.iittp.ac.in/">Indian Institute of Technology (IIT) Tirupati</a>, where I was an undergrad researcher at <a href="https://rishalab.in/"> RISHA (Research in Intelligent Systems and Human Analytics) Lab </a> headed by <a href="https://researchweb.iiit.ac.in/~sridhar_ch/home.html">Dr. Sridhar Chimalakonda</a> where I designed tools that help developers in improving software quality by analysing a wide range of software artifacts. I also worked as an ML Researcher as part of <a href="https://scholar.google.com/citations?user=1D3lF5MAAAAJ&hl=en">Dr. Kalidas's Lab</a>.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:rkalich2@jh.edu"> Student Email</a> &nbsp;/&nbsp;
+                <a href="mailto:rishitha2003@gmail.com"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/rishitha957">GitHub</a> &nbsp;/&nbsp;
+                <!-- <a href="https://scholar.google.com/citations?user=GCYG4GoAAAAJ">Google Scholar</a> &nbsp;/&nbsp; -->
+                <a href="https://www.linkedin.com/in/rishitha-kalicheti/"> LinkedIn </a>
+              </p>
+            </td>
+            <td style="padding:2.0%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/rishitha-kalicheti.jpg">
+            </td>
+          </tr>
+        </table>
+        <br/>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.0%;width:100%;vertical-align:middle">
+              <h2>Education</h2>
+              <!-- <p>
+                I'm interested in developing software solutions that leverage AI and Machine Learning to create robust and scalable solutions that are also highly optimized for efficiency and performance. 
+              </p> -->
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'education' %}
+          <tr>
+            <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+
+              <br>
+              <em>{{post.location}}</em>
+              <br>
+              {{post.duration}}
+              <br>
+              {{post.major}}
+              <br>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.0%;width:100%;vertical-align:middle">
+              <h2>Experience</h2>
+              <!-- <p>
+                I'm interested in developing software solutions that leverage AI and Machine Learning to create robust and scalable solutions that are also highly optimized for efficiency and performance. 
+              </p> -->
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'experience' %}
+          <tr>
+            <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">
+              <h3>{{post.title}} - {{post.role}}</h3>
+              <br>
+
+              <em>{{post.location}}</em> &nbsp; . &nbsp; {{ post.duration }}
+              <br>
+              <!-- {{ post.excerpt }} -->
+              {{ post.content }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.0%;width:100%;vertical-align:middle">
+              <h2>Projects</h2>
+              <p>
+                I'm interested in developing software solutions that leverage AI and Machine Learning to create robust and scalable solutions that are also highly optimized for efficiency and performance. 
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'project' %}
+          <tr>
+            <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              <em> {{post.event}} </em>
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.report %}
+              <a href="{{post.report}}">report</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.source-code %}
+              <a href="{{post.source-code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <br>
+              <p><b> {{post.subtitle}} </b></p>
+              {{ post.content }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>! Huge Thanks!!
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
