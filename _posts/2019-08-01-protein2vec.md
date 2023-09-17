@@ -2,7 +2,7 @@
 layout: post
 title:  "Protein2Vec"
 date:   2010-06-22 18:08:39 +00:00
-image: ../thumbnails/Protein2Vec.png
+image: /thumbnails/Protein2Vec.png
 categories: project
 subtitle: "Towards Understanding Protein Properties from Structure Graph"
 # website: https://rishitha957.github.io/GreenComputeDoc/

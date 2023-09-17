@@ -110,7 +110,7 @@
           {% if cat == 'experience' %}
           <tr>
             <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="{{site.baseurl}}/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">
               <h3>{{post.title}} - {{post.role}}</h3>
@@ -144,7 +144,7 @@
           {% if cat == 'project' %}
           <tr>
             <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="{{site.baseurl}}/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -152,10 +152,10 @@
               <em> {{post.event}} </em>
               <br>
               {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
+              <a href="{{site.baseurl}}/{{post.arxiv}}">arxiv</a> /
               {% endif %}
               {% if post.report %}
-              <a href="{{post.report}}">report</a> /
+              <a href="{{site.baseurl}}/{{post.report}}">report</a> /
               {% endif %}
               {% if post.video %}
               <a href="{{post.video}}">video</a> /

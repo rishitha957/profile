@@ -2,7 +2,7 @@
 layout: post
 title:  "Cloud Tokenator"
 date:   2010-06-22 18:08:39 +00:00
-image: ../thumbnails/CloudTokenator.png
+image: /thumbnails/CloudTokenator.png
 categories: project
 subtitle: "Automatic Renewal of Service Auth Tokens"
 # website: https://rishitha957.github.io/GreenComputeDoc/

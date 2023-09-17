@@ -2,7 +2,7 @@
 layout: post
 title:  "APIScanner"
 date:   2010-06-22 18:08:39 +00:00
-image: ../thumbnails/deprecated-API-alert.jpg
+image: /thumbnails/deprecated-API-alert.jpg
 categories: project
 subtitle: "Towards Automatic Detection of Deprecated APIs"
 website: https://rishitha957.github.io/APIScanner/

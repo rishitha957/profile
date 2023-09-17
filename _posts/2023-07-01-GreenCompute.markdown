@@ -2,7 +2,7 @@
 layout: post
 title:  "Green Compute"
 date:   2010-06-22 18:08:39 +00:00
-image: ../thumbnails/carbon-footprint.jpg
+image: /thumbnails/carbon-footprint.jpg
 categories: project
 subtitle: "Source code Energy Profiling Tool"
 website: https://rishitha957.github.io/GreenComputeDoc/

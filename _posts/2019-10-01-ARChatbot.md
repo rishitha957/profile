@@ -2,7 +2,7 @@
 layout: post
 title:  "We ARe Here For You"
 date:   2010-06-22 18:08:39 +00:00
-image: ../thumbnails/rp_carla_rigged.jpg
+image: /thumbnails/rp_carla_rigged.jpg
 categories: project
 subtitle: "An Augmented Reality based Voice Chatbot"
 # website: https://rishitha957.github.io/GreenComputeDoc/
