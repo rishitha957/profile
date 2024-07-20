@@ -3,7 +3,7 @@ layout: post
 title:  "Karaorchee"
 location: Baltimore, MD
 duration:   December 2023 - Present
-image: /thumbnails/karaorchee-logo.png
+image: /thumbnails/karaorchee.png
 categories: experience
 role: "Co-Founder"
 tech-stack: React-Native, Swift, MongoDB, Firebase, Flask
