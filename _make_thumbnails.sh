@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # for file in images/*.{jpg,png}; do
 #     [ ! -f "thumbnails/$file" ] && convert "$file" -resize 160x160 "thumbnails/$file"
 # done
